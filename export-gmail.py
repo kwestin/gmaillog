@@ -8,13 +8,6 @@ def export(request):
     import datetime
     import os
 
-    # environment variables
-    project = "burnished-yeti-345118" 
-    bucket_name = "tyrellcorp-gmail-bucket" 
-    dataset_id = "gmail_logs_dataset" 
-    dataset_location = "US" 
-    table_id = "daily_"
-
     partition_id = datetime.date.today().strftime('%Y%m%d')
 
     #req_data = request.get_json()
